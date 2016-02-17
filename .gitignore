@@ -279,3 +279,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.h
+solve/solve/ReadMe.txt
+solve/solve/stdafx.cpp
