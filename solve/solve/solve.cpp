@@ -51,7 +51,7 @@ int main(int argc, char* argv[])
 		else
 		{
 			cout << setprecision(4) << CalculationRoot(D, a, b, 1) << endl;
-			cout << setprecision(5) << CalculationRoot(D, a, b, -1) << endl;
+			cout << setprecision(4) << CalculationRoot(D, a, b, -1) << endl;
 		}
 	}
 	return 0;
