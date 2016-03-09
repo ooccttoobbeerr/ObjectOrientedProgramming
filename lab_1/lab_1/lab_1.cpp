@@ -21,6 +21,7 @@ int main(int argc, char* argv[])
 	if (argc != 3)
 	{
 		cout << "You have entered an false number of arguments!\nInput Example: lab_1.exe input.txt output.txt" << endl;
+		return 1;
 	}
 	else
 	{
@@ -33,12 +34,10 @@ int main(int argc, char* argv[])
 		else
 		{
 			cout << "Error opening file!" << endl;
+			return 1;
 		}
 		inputFile.close();
 		outputFile.close();
 	}
 	return 0;
 }
-
-
-

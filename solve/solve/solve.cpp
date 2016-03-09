@@ -16,7 +16,6 @@ double CalculationDiscriminant(double const & a, double const & b, double const 
 
 double CalculationRoot(double const & D, double const & a, double const & b, int const & sign)
 {
-	double x1, x2;
 	if (D == 0)
 	{
 		return -b / (2 * a);
@@ -32,10 +31,12 @@ int main(int argc, char* argv[])
 	if (argc != 4)
 	{
 		cout << "You have entered an false number of arguments!\nInput Example: solve.exe A B C" << endl;
+		return 1;
 	}
 	else if (atof(argv[1]) == 0)
 	{
 		cout << "Parameter 'A' should not be set to 0." << endl;
+		return 1;
 	}
 	else
 	{

@@ -281,6 +281,4 @@ $RECYCLE.BIN/
 *.lnk
 *.h
 solve/solve/ReadMe.txt
-solve/solve/stdafx.cpp
 lab_1/lab_1/ReadMe.txt
-lab_1/lab_1/stdafx.cpp
