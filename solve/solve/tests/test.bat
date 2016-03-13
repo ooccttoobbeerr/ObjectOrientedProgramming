@@ -21,8 +21,8 @@ fc.exe out.txt out3.txt
 if ERRORLEVEL 1 goto testFailed
 
 echo Test4 > out.txt
-%program% 254 123 >> out.txt
-if NOT ERRORLEVEL 1 goto testFailed
+%program% -1 -6 -3 >> out.txt
+if ERRORLEVEL 1 goto testFailed
 fc.exe out.txt out4.txt
 if ERRORLEVEL 1 goto testFailed
 
@@ -33,9 +33,21 @@ fc.exe out.txt out5.txt
 if ERRORLEVEL 1 goto testFailed
 
 echo Test6 > out.txt
-%program% 8 >> out.txt
-if NOT ERRORLEVEL 1 goto testFailed
+%program% 13 5 0 >> out.txt
+if ERRORLEVEL 1 goto testFailed
 fc.exe out.txt out6.txt
+if ERRORLEVEL 1 goto testFailed
+
+echo Test7 > out.txt
+%program% a b c >> out.txt
+if ERRORLEVEL 1 goto testFailed
+fc.exe out.txt out7.txt
+if ERRORLEVEL 1 goto testFailed
+
+echo Test8 > out.txt
+%program% >> out.txt
+if NOT ERRORLEVEL 1 goto testFailed
+fc.exe out.txt out8.txt
 if ERRORLEVEL 1 goto testFailed
 
 echo OK

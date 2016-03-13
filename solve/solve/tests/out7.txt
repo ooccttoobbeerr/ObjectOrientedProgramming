@@ -1,0 +1,2 @@
+Test7 
+Parameter 'A' should not be set to 0.
