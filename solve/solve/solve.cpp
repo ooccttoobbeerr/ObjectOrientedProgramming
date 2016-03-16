@@ -26,7 +26,7 @@ double CalculateRoot(double const & D, double const & a, double const & b, int c
 	}
 }
 
-void CalculateAndPrintRoots(double const &a, double const &b, double const &D)
+void PrintResult(double const &a, double const &b, double const &D)
 {
 		if (a == 0)
 		{
@@ -57,7 +57,7 @@ int main(int argc, char* argv[])
 		double c = atof(argv[3]);
 		double D;
 		D = CalculateDiscriminant(a, b, c);
-		CalculateAndPrintRoots(a, b, D);
+		PrintResult(a, b, D);
 	}
 	return 0;
 }
